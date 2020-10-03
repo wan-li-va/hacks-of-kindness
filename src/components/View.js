@@ -14,6 +14,7 @@ import {
   Link,
   useParams,
 } from 'react-router-dom';
+import ReactPlayer from 'react-player';
 
 const ArView = ({ entryId }) => {
   const link = true
@@ -33,14 +34,21 @@ const Message = ({ id }) => {
   var audioMessage = useStorage().ref('original audio.wav');
   var audioUrl = useStorageDownloadURL(audioMessage);
 
+  console.log(audioUrl);
+
   return (
     <div className={styles.msg}>
-      <ArView entryId={'41a7cc9c-9f7c-4c08-974d-7968967d82b6'}></ArView>
-      <audio src={audioUrl} autoPlay={true}></audio>
+      <ArView entryId={'d8b19562-502c-4e12-a4a3-3dc853c08211'}></ArView>
+      <ReactPlayer
+        className={styles.audio}
+        url={audioUrl}
+        playing={true}
+        volume={1}
+        controls={true}
+        autoPlay={true}
+      ></ReactPlayer>
       <Link to='/'>
-        <a href='/' className={styles.buttonContainer}>
-          <button className={styles.button}>Send A Message</button>
-        </a>
+        <button className={styles.button}>Send A Message</button>
       </Link>
     </div>
   );

@@ -22,10 +22,18 @@
   position: relative;
 }
 
-.buttonContainer{
+.button{
   position: absolute;
   display: inline-block;
   transform: translate(-50%, 0);
   left: 50%;
   bottom: 32px;
+}
+.audio {
+  position: absolute;
+  display: inline-block;
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: 112px;
+  width: 100% !important;
 }
