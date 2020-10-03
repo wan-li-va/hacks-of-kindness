@@ -18,7 +18,7 @@ export default class TextMessage extends Component {
         return (
             <div className="TextMessage">
                 <textarea onChange={e => this.onClick(e)} value={this.state.message} />
-                <button onClick={this.onClick}>Submit</button>
+                <button onClick={() => this.props.submitMessage()}>Submit</button>
             </div>
         )
     }
