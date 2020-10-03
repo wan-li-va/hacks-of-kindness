@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "firebase": "^7.22.0",
     "loaders.css": "^0.1.2",
+    "mic-recorder-to-mp3": "^2.2.2",
     "react": "^16.13.1",
     "react-audio-recorder": "^2.2.0",
     "react-dom": "^16.13.1",
