@@ -21,9 +21,9 @@ export default class Model extends Component {
     render() {
         return (
 
-            
+
             <div className={"model"}>
-                <h4>Choose something to send to your friend!</h4>
+                <h4>Choose an object!</h4>
                 <img src={logo} alt='image' />
             </div>
         )
