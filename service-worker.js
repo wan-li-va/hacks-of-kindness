@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/brightAR/precache-manifest.d03c57d5a0135f4c76354a19a89985b7.js"
+  "/brightAR/precache-manifest.c4d88e9c2d5a59276af37becacdf5212.js"
 );
 
 self.addEventListener('message', (event) => {
