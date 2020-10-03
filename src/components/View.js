@@ -33,9 +33,11 @@ const Message = ({ id }) => {
   var audioMessage = useStorage().ref('original audio.wav');
   var audioUrl = useStorageDownloadURL(audioMessage);
 
+  console.log(audioUrl);
+
   return (
     <div className={styles.msg}>
-      <ArView entryId={'41a7cc9c-9f7c-4c08-974d-7968967d82b6'}></ArView>
+      <ArView entryId={'d8b19562-502c-4e12-a4a3-3dc853c08211'}></ArView>
       <audio src={audioUrl} autoPlay={true}></audio>
       <Link to='/'>
         <a href='/' className={styles.buttonContainer}>
