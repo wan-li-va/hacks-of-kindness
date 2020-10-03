@@ -6,6 +6,9 @@ import Header from './header.js';
 import Model from './model.js';
 import Message from './message.js';
 
+
+
+
 export default class Home extends Component {
   render() {
     return (

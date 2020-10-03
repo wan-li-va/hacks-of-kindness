@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styles from '../styles/TextMessage.module.css';
 
 export default class TextMessage extends Component {
     constructor(props) {
@@ -9,13 +10,13 @@ export default class TextMessage extends Component {
     }
 
     onClick = event => {
-
     }
+
     render() {
         return (
             <div className="TextMessage">
                 <textarea onChange={e => this.setState({ message: e.target.value })} value={this.state.message} />
-                <button onClick={this.onClick}></button>
+                <button onClick={this.onClick}>Submit</button>
             </div>
         )
     }

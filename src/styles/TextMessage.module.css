@@ -1,5 +1,7 @@
-.message {
-    color: green;
+button{
+    text-align: center;
+    display: inline-block;
+    border-radius: 6px;
 }
 
 .recorder {
@@ -15,4 +17,3 @@
     align-items: center;
     justify-content: center;
 }
-
