@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { FirebaseAppProvider } from 'reactfire';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import Home from './components/Home';
 import View from './components/View';
