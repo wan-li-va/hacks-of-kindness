@@ -72,12 +72,15 @@ export default class Recorder extends Component {
   render() {
     return (
       <div>
+        <div class='btn-group' className={'playBar'}>
         <button onClick={this.start} disabled={this.state.isRecording}>
           Record
         </button>
         <button onClick={this.stop} disabled={!this.state.isRecording}>
           Stop
         </button>
+        </div>
+
         <audio src={this.state.blobURL} controls='controls' />
       </div>
     );
