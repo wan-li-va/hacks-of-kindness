@@ -15,7 +15,6 @@ export default class Home extends Component {
     return (
       <div className={styles.container}>
         <Header></Header>
-        <Recorder />
 
         <div className={'body'}>
           <Model className={'model'}></Model>
