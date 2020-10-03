@@ -3,3 +3,17 @@ button{
     display: inline-block;
     border-radius: 6px;
 }
+
+.recorder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.TextMessage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
