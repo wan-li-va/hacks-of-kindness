@@ -31,15 +31,13 @@ const Message = ({ id }) => {
   const messageRef = useFirestore().collection('message').doc(id);
   const message = useFirestoreDocData(messageRef);
 
-  var audioMessage = useStorage().ref('original audio.wav');
+  console.log(message);
+
+  const isAudioMessage = message.text === '' ? true : false;
+  var audioMessage = useStorage().ref(message.audio);
   var audioUrl = useStorageDownloadURL(audioMessage);
 
-  console.log(audioUrl);
-
-  return (
-    <div className={styles.msg}>
-      <ArView entryId={'d8b19562-502c-4e12-a4a3-3dc853c08211'}></ArView>
-      <ReactPlayer
+  const body = isAudioMessage ? <ReactPlayer
         className={styles.audio}
         url={audioUrl}
         playing={true}
@@ -47,6 +45,15 @@ const Message = ({ id }) => {
         controls={true}
         autoPlay={true}
       ></ReactPlayer>
+      : 
+      window.responsiveVoice.speak(message.text)
+      ;
+
+  console.log(audioUrl);
+  return (
+    <div className={styles.msg}>
+      <ArView entryId={message.entity}></ArView>
+      {body}
       <Link to='/'>
         <button className={styles.button}>Send A Message</button>
       </Link>
