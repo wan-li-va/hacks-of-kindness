@@ -13,7 +13,6 @@ export default class Message extends Component {
                 <TextMessage>
 
                 </TextMessage>
-                <script src="https://code.responsivevoice.org/responsivevoice.js?key=B5AXjDdu"></script>
             </div>
         )
     }
