@@ -14,7 +14,7 @@ export default class Header extends Component {
         </div>
 
         <div className='instructions'>
-          <p>Instructions for using this web app and sending compliments</p>
+          <p>Send visible happiness :)</p>
         </div>
       </div>
     );
