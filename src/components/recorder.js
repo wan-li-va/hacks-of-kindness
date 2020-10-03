@@ -1,8 +1,16 @@
 import React, { Component } from 'react'
 import '../styles/Recorder.module.css'
 import MicRecorder from 'mic-recorder-to-mp3'
+import * as firebase from 'firebase';
 
 
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    var r = (Math.random() * 16) | 0,
+      v = c == 'x' ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+}
 
 const Mp3Recorder = new MicRecorder({ bitRate: 128 });
 export default class Recorder extends Component {
@@ -49,6 +57,15 @@ export default class Recorder extends Component {
       .then(([buffer, blob]) => {
         const blobURL = URL.createObjectURL(blob);
         this.setState({ blobURL, isRecording: false });
+
+        var storageRef = firebase.storage().ref();
+        var newRef = storageRef.child(uuidv4());
+
+        newRef.put(blob).then(function (snapshot) {
+          console.log('Uploaded a blob or file!');
+        });
+
+        this.props.updateState('audio', newRef.fullPath);
       })
       .catch((e) => console.log(e));
   };
