@@ -29,7 +29,7 @@ export default class Message extends Component {
   submitMessage() {
     var db = firebase.firestore();
     db.collection('users')
-      .add(this.state)
+      .doc("123").set(this.state)
       .then(function (docRef) {
           alert(getURL()+ 'views/' +docRef.id);
       });
