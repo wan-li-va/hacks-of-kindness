@@ -10,7 +10,7 @@ export default class Header extends Component {
     return (
       <div className={'header'}>
         <div className={'title'}>
-          <h1>Working Name</h1>
+          <h1>brightAR</h1>
         </div>
 
         <div className='instructions'>
