@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styles from '../styles/Message.module.css'
 import MicRecorder from 'mic-recorder-to-mp3'
+import 
 
 
 
@@ -56,12 +57,15 @@ export default class Recorder extends Component {
   render() {
     return (
       <div>
+        <div class='btn-group' className={'playBar'}>
         <button onClick={this.start} disabled={this.state.isRecording}>
           Record
         </button>
         <button onClick={this.stop} disabled={!this.state.isRecording}>
           Stop
         </button>
+        </div>
+
         <audio src={this.state.blobURL} controls='controls' />
       </div>
     );
