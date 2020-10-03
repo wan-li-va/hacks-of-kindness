@@ -3,6 +3,7 @@ import styles from '../styles/Message.module.css'
 import MicRecorder from 'mic-recorder-to-mp3'
 
 
+
 const Mp3Recorder = new MicRecorder({ bitRate: 128 });
 export default class Recorder extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ export default class Recorder extends Component {
       }
     );
   }
+
 
   start = () => {
     if (this.state.isBlocked) {

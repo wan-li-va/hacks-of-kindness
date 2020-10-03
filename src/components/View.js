@@ -17,7 +17,7 @@ import {
 import ReactPlayer from 'react-player';
 
 const ArView = ({ entryId }) => {
-  const link = false
+  const link = true
     ? `https://console.echoAR.xyz/webar?key=${'calm-mud-3261'}&entry=${entryId}`
     : 'http://google.com/';
   return (
@@ -40,11 +40,12 @@ const Message = ({ id }) => {
     <div className={styles.msg}>
       <ArView entryId={'d8b19562-502c-4e12-a4a3-3dc853c08211'}></ArView>
       <ReactPlayer
+        className={styles.audio}
         url={audioUrl}
         playing={true}
         volume={1}
-        // controls={true}
-        autoplay={true}
+        controls={true}
+        autoPlay={true}
       ></ReactPlayer>
       <Link to='/'>
         <button className={styles.button}>Send A Message</button>
