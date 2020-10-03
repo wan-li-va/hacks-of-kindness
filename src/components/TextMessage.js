@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from "react-bootstrap/Button"
 
 export default class TextMessage extends Component {
     constructor(props) {
@@ -9,13 +10,14 @@ export default class TextMessage extends Component {
     }
 
     onClick = event => {
-
+        window.responsiveVoice.speak(this.state.message)
     }
+
     render() {
         return (
             <div className="TextMessage">
                 <textarea onChange={e => this.setState({ message: e.target.value })} value={this.state.message} />
-                <button onClick={this.onClick}></button>
+                <Button variant="success" onClick={this.onClick}>Hear your message!</Button>
             </div>
         )
     }
