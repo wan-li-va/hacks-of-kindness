@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    top: 10px;
+}
+
+.title {
+    color: pink;
+}

@@ -1,0 +1,31 @@
+.container {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+  background: #a63a50;
+  overflow: hidden;
+}
+
+.arview {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+}
+
+.iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.msg {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+  position: relative;
+}
+
+.buttonContainer{
+  position: absolute;
+  display: inline-block;
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: 32px;
+}
