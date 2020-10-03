@@ -14,9 +14,10 @@ import {
   Link,
   useParams,
 } from 'react-router-dom';
+import ReactPlayer from 'react-player';
 
 const ArView = ({ entryId }) => {
-  const link = true
+  const link = false
     ? `https://console.echoAR.xyz/webar?key=${'calm-mud-3261'}&entry=${entryId}`
     : 'http://google.com/';
   return (
@@ -37,12 +38,16 @@ const Message = ({ id }) => {
 
   return (
     <div className={styles.msg}>
-      <ArView entryId={'d8b19562-502c-4e12-a4a3-3dc853c08211'}></ArView>
-      <audio src={audioUrl} autoPlay={true}></audio>
+      {/* <ArView entryId={'d8b19562-502c-4e12-a4a3-3dc853c08211'}></ArView> */}
+      <ReactPlayer
+        url={audioUrl}
+        playing={true}
+        volume={1}
+        // controls={true}
+        autoplay={true}
+      ></ReactPlayer>
       <Link to='/'>
-        <a href='/' className={styles.buttonContainer}>
-          <button className={styles.button}>Send A Message</button>
-        </a>
+        <button className={styles.button}>Send A Message</button>
       </Link>
     </div>
   );
