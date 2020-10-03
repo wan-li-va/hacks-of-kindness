@@ -14,7 +14,6 @@ export default class Home extends Component {
 
         <div className={'body'}>
           <Model className={'model'}></Model>
-
           <Message className={'message'}></Message>
         </div>
       </div>
