@@ -17,6 +17,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   background: $primary-color;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 a {
@@ -76,4 +78,5 @@ button {
   border-radius: 2px;
   box-shadow: 2px 2px 16px rgba($primary-color, 0.3);
   color: $linen;
+  cursor: pointer;
 }
