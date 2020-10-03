@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a758be47cd13ffa76bd86ef7e8044ca8",
+    "revision": "58f8b91b31d0ef5cde9216dae32acabc",
     "url": "/hacks-of-kindness/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hacks-of-kindness/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "c3bd0a4cb4fc86a3abdc",
-    "url": "/hacks-of-kindness/static/css/main.a12228a4.chunk.css"
+    "revision": "a6925665ed95d6b98a35",
+    "url": "/hacks-of-kindness/static/css/main.bcbdf2ae.chunk.css"
   },
   {
     "revision": "2d7e29faea9cfa97a9bf",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hacks-of-kindness/static/js/9.10ce6d88.chunk.js"
   },
   {
-    "revision": "c3bd0a4cb4fc86a3abdc",
-    "url": "/hacks-of-kindness/static/js/main.3463c489.chunk.js"
+    "revision": "a6925665ed95d6b98a35",
+    "url": "/hacks-of-kindness/static/js/main.2da8a106.chunk.js"
   },
   {
     "revision": "4aca1cb5303ba98a0201",
