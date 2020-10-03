@@ -38,7 +38,7 @@ const Message = ({ id }) => {
 
   return (
     <div className={styles.msg}>
-      {/* <ArView entryId={'d8b19562-502c-4e12-a4a3-3dc853c08211'}></ArView> */}
+      <ArView entryId={'d8b19562-502c-4e12-a4a3-3dc853c08211'}></ArView>
       <ReactPlayer
         url={audioUrl}
         playing={true}
